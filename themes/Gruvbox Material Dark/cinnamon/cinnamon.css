@@ -693,7 +693,7 @@ StScrollView StScrollBar {
 }
 
 .system-status-icon.error {
-  color: #cbb75d;
+  color: #d8a657;
 }
 
 #overview {
@@ -1092,7 +1092,7 @@ StScrollView StScrollBar {
 }
 
 .run-dialog-error-label {
-  color: #cbb75d;
+  color: #d8a657;
 }
 
 .run-dialog-error-box {
@@ -1352,7 +1352,7 @@ StScrollView StScrollBar {
 }
 
 .window-list-item-box .progress {
-  background-color: #68dc75;
+  background-color: #89b482;
 }
 
 .window-list-item-box.top StLabel, .window-list-item-box.bottom StLabel {
@@ -1424,7 +1424,7 @@ StScrollView StScrollBar {
 }
 
 .grouped-window-list-item-box .progress {
-  background-color: #68dc75;
+  background-color: #89b482;
 }
 
 .grouped-window-list-item-demands-attention {

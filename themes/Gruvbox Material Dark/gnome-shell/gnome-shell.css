@@ -254,7 +254,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -barlevel-border-color: transparent;
   -barlevel-active-background-color: #7c6f64;
   -barlevel-active-border-color: transparent;
-  -barlevel-overdrive-color: #cbb75d;
+  -barlevel-overdrive-color: #d8a657;
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 2px;
   -barlevel-border-width: 0;
@@ -613,7 +613,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .prompt-dialog-error-label {
   font-size: 1em;
-  color: #cbb75d;
+  color: #d8a657;
   padding-bottom: 8px;
 }
 
@@ -914,7 +914,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -barlevel-height: 8px;
   -barlevel-background-color: rgba(212, 190, 152, 0.12);
   -barlevel-active-background-color: #7c6f64;
-  -barlevel-overdrive-color: #cbb75d;
+  -barlevel-overdrive-color: #d8a657;
   -barlevel-overdrive-separator-width: 2px;
 }
 
@@ -2877,7 +2877,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .login-dialog-message-warning {
-  color: #cbb75d;
+  color: #d8a657;
 }
 
 .login-dialog-message-hint {

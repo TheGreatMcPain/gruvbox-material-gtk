@@ -45,7 +45,7 @@ radio:active, row.activatable:active {
 * {
   background-clip: padding-box;
   -GtkToolButton-icon-spacing: 0;
-  -GtkTextView-error-underline-color: #cbb75d;
+  -GtkTextView-error-underline-color: #d8a657;
   -GtkScrolledWindow-scrollbar-spacing: 0;
   -GtkToolItemGroup-expander-size: 11;
   -GtkWidget-text-handle-width: 24;
@@ -318,15 +318,15 @@ entry undershoot.right {
 spinbutton.error:not(.vertical),
 entry.error {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), border-image 225ms cubic-bezier(0, 0, 0.2, 1);
-  border-image: radial-gradient(circle closest-corner at center calc(100% - 1px), #cbb75d 0%, transparent 0%) 0 0 0/0 0 0px;
-  box-shadow: inset 0 0 0 9999px transparent, inset 0 -1px #cbb75d;
+  border-image: radial-gradient(circle closest-corner at center calc(100% - 1px), #d8a657 0%, transparent 0%) 0 0 0/0 0 0px;
+  box-shadow: inset 0 0 0 9999px transparent, inset 0 -1px #d8a657;
   background-color: rgba(212, 190, 152, 0.04);
   color: #d4be98;
 }
 
 spinbutton.error:focus:not(.vertical),
 entry.error:focus {
-  border-image: radial-gradient(circle closest-corner at center calc(100% - 1px), #cbb75d 100%, transparent 0%) 0 0 2/0 0 2px;
+  border-image: radial-gradient(circle closest-corner at center calc(100% - 1px), #d8a657 100%, transparent 0%) 0 0 2/0 0 2px;
 }
 
 spinbutton.error:disabled:not(.vertical),
@@ -392,7 +392,7 @@ spinbutton.vertical entry.error, .gedit-search-slider .linked:not(.vertical) > e
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
   border-image: none;
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 2px -0.6px rgba(0, 0, 0, 0.17);
-  background-color: #cbb75d;
+  background-color: #d8a657;
   color: #282828;
 }
 
@@ -782,7 +782,7 @@ button.suggested-action.flat:checked {
 }
 
 button.destructive-action {
-  background-color: #cbb75d;
+  background-color: #d8a657;
   color: #282828;
   box-shadow: inset 0 0 0 9999px transparent, 0 3px 2px -3px rgba(0, 0, 0, 0.3), 0 2px 2px -1px rgba(0, 0, 0, 0.24), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
@@ -812,7 +812,7 @@ button.destructive-action:checked {
 
 button.destructive-action.flat {
   background-color: transparent;
-  color: #cbb75d;
+  color: #d8a657;
   box-shadow: inset 0 0 0 9999px transparent;
 }
 
@@ -981,7 +981,7 @@ button.color {
 }
 
 *:visited {
-  color: #b52e73;
+  color: #d3869b;
 }
 
 button.link:link {
@@ -1002,7 +1002,7 @@ button.link:link:active {
 }
 
 button.link:visited {
-  color: #b52e73;
+  color: #d3869b;
   box-shadow: inset 0 0 0 9999px transparent;
 }
 
@@ -3030,7 +3030,7 @@ levelbar block.high, levelbar block:not(.empty) {
 }
 
 levelbar block.full {
-  background-color: #68dc75;
+  background-color: #89b482;
 }
 
 levelbar block.empty {
@@ -3397,7 +3397,7 @@ messagedialog .dialog-action-box button:not(:last-child) {
 }
 
 .dialog-action-box button.destructive-action:not(:disabled) {
-  color: #cbb75d;
+  color: #d8a657;
   box-shadow: inset 0 0 0 9999px transparent;
 }
 
@@ -3714,7 +3714,7 @@ infobar.warning *:link {
 }
 
 infobar.error {
-  background-color: #cbb75d;
+  background-color: #d8a657;
   color: #282828;
 }
 
@@ -4215,7 +4215,7 @@ popover.emoji-completion .emoji:hover {
 }
 
 .conflict-row:not(:selected) {
-  background-color: #595121;
+  background-color: #5a524c;
 }
 
 .nautilus-window flowboxchild .icon-item-background {
@@ -4512,7 +4512,7 @@ layout {
 }
 
 entry.search-missing {
-  background-color: #cbb75d;
+  background-color: #d8a657;
   color: #282828;
 }
 
@@ -6663,7 +6663,7 @@ calendar.raven-calendar:selected {
 }
 
 .budgie-polkit-dialog .failure {
-  color: #cbb75d;
+  color: #d8a657;
 }
 
 .budgie-run-dialog entry.search {
@@ -7045,8 +7045,8 @@ widgets main borders color on backdrop windows */
 /*
 these are pretty self explicative */
 @define-color warning_color #cbb010;
-@define-color error_color #cbb75d;
-@define-color success_color #68dc75;
+@define-color error_color #d8a657;
+@define-color success_color #89b482;
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
