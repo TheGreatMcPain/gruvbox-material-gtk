@@ -28,4 +28,4 @@ This theme is a port of [sainnhe/gruvbox-material](https://github.com/sainnhe/gr
 
 ## License
 
-[MIT](./LICENSE) © sainnhe
+[MIT](./LICENSE)
