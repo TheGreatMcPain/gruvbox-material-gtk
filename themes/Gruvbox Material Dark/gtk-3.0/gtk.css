@@ -3465,7 +3465,7 @@ stacksidebar.sidebar row {
 
 stacksidebar.sidebar row:selected {
   font-weight: 500;
-  color: #7c6f64;
+  color: #d4be98;
   background-color: rgba(124, 111, 100, 0.12);
   box-shadow: inset 0 0 0 9999px transparent;
 }
@@ -3529,7 +3529,7 @@ placessidebar.sidebar row > revealer {
 
 placessidebar.sidebar row:selected {
   font-weight: 500;
-  color: #7c6f64;
+  color: #d4be98;
   background-color: rgba(124, 111, 100, 0.12);
   box-shadow: inset 0 0 0 9999px transparent;
 }
@@ -3547,7 +3547,7 @@ placessidebar.sidebar row:selected:active {
 }
 
 placessidebar.sidebar row:selected image.sidebar-icon {
-  color: #7c6f64;
+  color: #d4be98;
 }
 
 placessidebar.sidebar row:disabled {
