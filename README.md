@@ -16,8 +16,8 @@ This theme is a port of [sainnhe/gruvbox-material](https://github.com/sainnhe/gr
 ### Manually Installation
 
 1. Clone this repository.
-2. Copy `/path/to/gruvbox-material-gtk/themes/*` to `~/.themes/`
-3. Copy `/path/to/gruvbox-material-gtk/icons/*` to `~/.icons/`
+2. Copy `/path/to/gruvbox-material-gtk/themes/*` to `~/.themes/` or `~/.local/share/themes/`
+3. Copy `/path/to/gruvbox-material-gtk/icons/*` to `~/.icons/` or `~/.local/share/icons/`
 
 ## Credits
 

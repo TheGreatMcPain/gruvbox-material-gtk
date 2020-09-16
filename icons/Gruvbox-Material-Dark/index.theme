@@ -1,6 +1,6 @@
 [Icon Theme]
-Name=oomox-baloon
-Comment=Papirus icon theme
+Name=Gruvbox-Material-Dark
+Comment=Gruvbox Material Dark icon theme
 Inherits=breeze,gnome,hicolor
 
 Example=folder
