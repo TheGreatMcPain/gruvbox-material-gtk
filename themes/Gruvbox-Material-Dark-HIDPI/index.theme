@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Gruvbox-Material-Dark-HIDPI
+Comment=Gruvbox Material theme (HIDPI Version)
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Gruvbox-Material-Dark-HIDPI
+MetacityTheme=Gruvbox-Material-Dark-HIDPI
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24

@@ -6,22 +6,22 @@
 # so there will always be a visible difference between the GTK 2 and 3 theme.
 
 style "default" {
-  xthickness = 2
-  ythickness = 2
+  xthickness = 1
+  ythickness = 1
 
   ####################
   # Style Properties #
   ####################
 
   GtkWidget::focus-padding      = 0
-  GtkWidget::focus-line-width   = 4
+  GtkWidget::focus-line-width   = 2
   GtkWidget::focus-line-pattern = "\2\1"
 
-  GtkToolbar::space-size       = 10 # 2 + 4*2 (separator + margins)
-  GtkToolbar::internal-padding = 4
-  GtkToolButton::icon-spacing  = 8
+  GtkToolbar::space-size       = 5 # 1 + 2*2 (separator + margins)
+  GtkToolbar::internal-padding = 2
+  GtkToolButton::icon-spacing  = 4
 
-  GtkWidget::tooltip-radius    = 8
+  GtkWidget::tooltip-radius    = 4
   GtkWidget::tooltip-alpha     = 230
   GtkWidget::new-tooltip-style = 1 #for compatibility
 
@@ -35,24 +35,24 @@ style "default" {
 
   GtkSeparatorMenuItem::horizontal-padding = 0
   GtkSeparatorMenuItem::wide-separators    = 1
-  GtkSeparatorMenuItem::separator-height   = 6
+  GtkSeparatorMenuItem::separator-height   = 3
 
   GtkButton::child-displacement-y = 0
 
   GtkButton::default-border         = {0, 0, 0, 0}
   GtkButton::default-outside-border = {0, 0, 0, 0}
-  GtkButton::inner-border           = {8, 8, 8, 8}
+  GtkButton::inner-border           = {4, 4, 4, 4}
 
   GtkEntry::state-hint   = 1
-  GtkEntry::inner-border = {8, 8, 8, 8}
+  GtkEntry::inner-border = {4, 4, 4, 4}
 
-  GtkPaned::handle-size  = 16
-  GtkHPaned::handle-size = 16
-  GtkVPaned::handle-size = 16
+  GtkPaned::handle-size  = 8
+  GtkHPaned::handle-size = 8
+  GtkVPaned::handle-size = 8
 
   GtkScrollbar::trough-border = 0
   GtkRange::trough-border     = 0
-  GtkRange::slider-width      = 34
+  GtkRange::slider-width      = 17
   GtkRange::stepper-size      = 0
   GtkRange::activate-slider   = 1
 
@@ -60,18 +60,18 @@ style "default" {
   GtkScrollbar::stepper-size                 = 0
   GtkScrollbar::has-backward-stepper         = 0
   GtkScrollbar::has-forward-stepper          = 0
-  GtkScrollbar::min-slider-length            = 64 # 48 + 2*8 (margins)
+  GtkScrollbar::min-slider-length            = 32 # 24 + 2*4 (margins)
   GtkScrolledWindow::scrollbar-spacing       = 0
   GtkScrolledWindow::scrollbars-within-bevel = 1
 
-  GtkScale::slider_length       = 48
-  GtkScale::slider_width        = 48
+  GtkScale::slider_length       = 24
+  GtkScale::slider_width        = 24
   GtkScale::trough-side-details = 1
 
-  GtkProgressBar::min-horizontal-bar-height = 8
-  GtkProgressBar::min-vertical-bar-width    = 8
-  GtkProgressBar::xspacing                  = 8
-  GtkProgressBar::yspacing                  = 8
+  GtkProgressBar::min-horizontal-bar-height = 4
+  GtkProgressBar::min-vertical-bar-width    = 4
+  GtkProgressBar::xspacing                  = 4
+  GtkProgressBar::yspacing                  = 4
 
   GtkStatusbar::shadow_type    = GTK_SHADOW_NONE
   GtkSpinButton::shadow_type   = GTK_SHADOW_NONE
@@ -81,24 +81,24 @@ style "default" {
   # ( every window is misaligned for the sake of menus ):
   GtkMenuBar::internal-padding = 0
   GtkMenu::horizontal-padding  = 0
-  GtkMenu::vertical-padding    = 8
+  GtkMenu::vertical-padding    = 4
   GtkMenu::double-arrows       = 0
   GtkMenuItem::arrow-scaling   = 1
-  GtkMenuItem::toggle-spacing  = 24
+  GtkMenuItem::toggle-spacing  = 12
 
-  GtkCheckButton::indicator-size    = 48
-  GtkCheckButton::indicator_spacing = 4
-  GtkOptionMenu::indicator_spacing  = {16, 16, 8, 8}
+  GtkCheckButton::indicator-size    = 24
+  GtkCheckButton::indicator_spacing = 2
+  GtkOptionMenu::indicator_spacing  = {8, 8, 4, 4}
 
-  GtkTreeView::expander-size        = 32
+  GtkTreeView::expander-size        = 16
   GtkTreeView::vertical-separator   = 0
-  GtkTreeView::horizontal-separator = 8
+  GtkTreeView::horizontal-separator = 4
   GtkTreeView::allow-rules          = 0
   # Set this because some apps read it
   GtkTreeView::odd-row-color        = @base_color
   GtkTreeView::even-row-color       = @base_color
 
-  GtkExpander::expander-size = 32
+  GtkExpander::expander-size = 16
 
   GtkNotebook::tab-overlap = 0
 
@@ -501,7 +501,7 @@ style "default" {
     image {
       function        = ARROW
       state           = NORMAL
-      overlay_file    = "assets/pan-up-alt.png"
+      overlay_file    = "assets/pan-up.png"
       overlay_stretch = FALSE
       arrow_direction = UP
     }
@@ -525,7 +525,7 @@ style "default" {
     image {
       function        = ARROW
       state           = INSENSITIVE
-      overlay_file    = "assets/pan-up-alt-disabled.png"
+      overlay_file    = "assets/pan-up-disabled.png"
       overlay_stretch = FALSE
       arrow_direction = UP
     }
@@ -533,7 +533,7 @@ style "default" {
     image {
       function        = ARROW
       state           = NORMAL
-      overlay_file    = "assets/pan-down-alt.png"
+      overlay_file    = "assets/pan-down.png"
       overlay_stretch = FALSE
       arrow_direction = DOWN
     }
@@ -557,7 +557,7 @@ style "default" {
     image {
       function        = ARROW
       state           = INSENSITIVE
-      overlay_file    = "assets/pan-down-alt-disabled.png"
+      overlay_file    = "assets/pan-down-disabled.png"
       overlay_stretch = FALSE
       arrow_direction = DOWN
     }
@@ -565,7 +565,7 @@ style "default" {
     image {
       function        = ARROW
       state           = NORMAL
-      overlay_file    = "assets/pan-left-alt.png"
+      overlay_file    = "assets/pan-left.png"
       overlay_stretch = FALSE
       arrow_direction = LEFT
     }
@@ -589,7 +589,7 @@ style "default" {
     image {
       function        = ARROW
       state           = INSENSITIVE
-      overlay_file    = "assets/pan-left-alt-disabled.png"
+      overlay_file    = "assets/pan-left-disabled.png"
       overlay_stretch = FALSE
       arrow_direction = LEFT
     }
@@ -597,7 +597,7 @@ style "default" {
     image {
       function        = ARROW
       state           = NORMAL
-      overlay_file    = "assets/pan-right-alt.png"
+      overlay_file    = "assets/pan-right.png"
       overlay_stretch = FALSE
       arrow_direction = RIGHT
     }
@@ -621,7 +621,7 @@ style "default" {
     image {
       function        = ARROW
       state           = INSENSITIVE
-      overlay_file    = "assets/pan-right-alt-disabled.png"
+      overlay_file    = "assets/pan-right-disabled.png"
       overlay_stretch = FALSE
       arrow_direction = RIGHT
     }
@@ -633,7 +633,7 @@ style "default" {
     image {
       function        = TAB
       state           = NORMAL
-      overlay_file    = "assets/pan-down-alt.png"
+      overlay_file    = "assets/pan-down.png"
       overlay_stretch = FALSE
     }
 
@@ -654,7 +654,7 @@ style "default" {
     image {
       function        = TAB
       state           = INSENSITIVE
-      overlay_file    = "assets/pan-down-alt-disabled.png"
+      overlay_file    = "assets/pan-down-disabled.png"
       overlay_stretch = FALSE
     }
 
@@ -665,13 +665,13 @@ style "default" {
     image {
       function = VLINE
       file     = "assets/border.png"
-      border   = {2, 0, 0, 0}
+      border   = {1, 0, 0, 0}
     }
 
     image {
       function = HLINE
       file     = "assets/border.png"
-      border   = {0, 0, 2, 0}
+      border   = {0, 0, 1, 0}
     }
 
     #########
@@ -681,7 +681,7 @@ style "default" {
     image {
       function = FOCUS
       file     = "assets/focus.png"
-      border   = {10, 10, 10, 10} # Super strange, {8, 8, 8, 8} does not work properly...
+      border   = {5, 5, 5, 5} # Super strange, {4, 4, 4, 4} does not work properly...
       stretch  = TRUE
     }
 
@@ -756,28 +756,28 @@ style "default" {
       function       = EXPANDER
       expander_style = EXPANDED
       state          = NORMAL
-      file           = "assets/pan-down-alt.png"
+      file           = "assets/pan-down.png"
     }
 
     image {
       function       = EXPANDER
       expander_style = EXPANDED
       state          = PRELIGHT
-      file           = "assets/pan-down.png"
+      file           = "assets/pan-down-alt.png"
     }
 
     image {
       function       = EXPANDER
       expander_style = EXPANDED
       state          = ACTIVE
-      file           = "assets/pan-down.png"
+      file           = "assets/pan-down-alt.png"
     }
 
     image {
       function       = EXPANDER
       expander_style = EXPANDED
       state          = INSENSITIVE
-      file           = "assets/pan-down-alt-disabled.png"
+      file           = "assets/pan-down-disabled.png"
     }
 
     # LTR
@@ -786,7 +786,7 @@ style "default" {
       function       = EXPANDER
       expander_style = COLLAPSED
       state          = NORMAL
-      file           = "assets/pan-right-alt.png"
+      file           = "assets/pan-right.png"
       direction      = LTR
     }
 
@@ -794,7 +794,7 @@ style "default" {
       function       = EXPANDER
       expander_style = COLLAPSED
       state          = PRELIGHT
-      file           = "assets/pan-right.png"
+      file           = "assets/pan-right-alt.png"
       direction      = LTR
     }
 
@@ -802,7 +802,7 @@ style "default" {
       function       = EXPANDER
       expander_style = COLLAPSED
       state          = ACTIVE
-      file           = "assets/pan-right.png"
+      file           = "assets/pan-right-alt.png"
       direction      = LTR
     }
 
@@ -810,7 +810,7 @@ style "default" {
       function       = EXPANDER
       expander_style = COLLAPSED
       state          = INSENSITIVE
-      file           = "assets/pan-right-alt-disabled.png"
+      file           = "assets/pan-right-disabled.png"
       direction      = LTR
     }
 
@@ -834,7 +834,7 @@ style "default" {
       function       = EXPANDER
       expander_style = COLLAPSED
       state          = NORMAL
-      file           = "assets/pan-left-alt.png"
+      file           = "assets/pan-left.png"
       direction      = RTL
     }
 
@@ -842,7 +842,7 @@ style "default" {
       function       = EXPANDER
       expander_style = COLLAPSED
       state          = PRELIGHT
-      file           = "assets/pan-left.png"
+      file           = "assets/pan-left-alt.png"
       direction      = RTL
     }
 
@@ -850,7 +850,7 @@ style "default" {
       function       = EXPANDER
       expander_style = COLLAPSED
       state          = ACTIVE
-      file           = "assets/pan-left.png"
+      file           = "assets/pan-left-alt.png"
       direction      = RTL
     }
 
@@ -858,7 +858,7 @@ style "default" {
       function       = EXPANDER
       expander_style = COLLAPSED
       state          = INSENSITIVE
-      file           = "assets/pan-left-alt-disabled.png"
+      file           = "assets/pan-left-disabled.png"
       direction      = RTL
     }
 
@@ -886,7 +886,7 @@ style "default" {
       function = EXTENSION
       state    = NORMAL
       file     = "assets/tab.png"
-      border   = {0, 2, 0, 0}
+      border   = {0, 1, 0, 0}
       stretch  = TRUE
       gap_side = RIGHT
     }
@@ -902,7 +902,7 @@ style "default" {
       function = EXTENSION
       state    = NORMAL
       file     = "assets/tab.png"
-      border   = {2, 0, 0, 0}
+      border   = {1, 0, 0, 0}
       stretch  = TRUE
       gap_side = LEFT
     }
@@ -918,7 +918,7 @@ style "default" {
       function = EXTENSION
       state    = NORMAL
       file     = "assets/tab.png"
-      border   = {0, 0, 0, 2}
+      border   = {0, 0, 0, 1}
       stretch  = TRUE
       gap_side = BOTTOM
     }
@@ -934,7 +934,7 @@ style "default" {
       function = EXTENSION
       state    = NORMAL
       file     = "assets/tab.png"
-      border   = {0, 0, 2, 0}
+      border   = {0, 0, 1, 0}
       stretch  = TRUE
       gap_side = TOP
     }
@@ -950,10 +950,10 @@ style "default" {
       function   = BOX_GAP
       detail     = "notebook"
       file       = "assets/frame-notebook.png"
-      border     = {2, 2, 2, 2}
+      border     = {1, 1, 1, 1}
       stretch    = TRUE
       gap_file   = "assets/tab.png"
-      gap_border = {2, 0, 0, 0}
+      gap_border = {1, 0, 0, 0}
       gap_side   = LEFT
     }
 
@@ -961,10 +961,10 @@ style "default" {
       function   = BOX_GAP
       detail     = "notebook"
       file       = "assets/frame-notebook.png"
-      border     = {2, 2, 2, 2}
+      border     = {1, 1, 1, 1}
       stretch    = TRUE
       gap_file   = "assets/tab.png"
-      gap_border = {0, 2, 0, 0}
+      gap_border = {0, 1, 0, 0}
       gap_side   = RIGHT
     }
 
@@ -972,10 +972,10 @@ style "default" {
       function   = BOX_GAP
       detail     = "notebook"
       file       = "assets/frame-notebook.png"
-      border     = {2, 2, 2, 2}
+      border     = {1, 1, 1, 1}
       stretch    = TRUE
       gap_file   = "assets/tab.png"
-      gap_border = {0, 0, 2, 0}
+      gap_border = {0, 0, 1, 0}
       gap_side   = TOP
     }
 
@@ -983,10 +983,10 @@ style "default" {
       function   = BOX_GAP
       detail     = "notebook"
       file       = "assets/frame-notebook.png"
-      border     = {2, 2, 2, 2}
+      border     = {1, 1, 1, 1}
       stretch    = TRUE
       gap_file   = "assets/tab.png"
-      gap_border = {0, 0, 0, 2}
+      gap_border = {0, 0, 0, 1}
       gap_side   = BOTTOM
     }
 
@@ -995,7 +995,7 @@ style "default" {
       function = BOX
       detail   = "notebook"
       file     = "assets/frame-notebook.png"
-      border   = {2, 2, 2, 2}
+      border   = {1, 1, 1, 1}
       stretch  = TRUE
     }
 
@@ -1007,7 +1007,7 @@ style "default" {
       function    = BOX
       detail      = "trough"
       file        = "assets/scrollbar-horz-trough.png"
-      border      = {0, 0, 2, 0}
+      border      = {0, 0, 1, 0}
       orientation = HORIZONTAL
     }
 
@@ -1015,7 +1015,7 @@ style "default" {
       function    = BOX
       detail      = "trough"
       file        = "assets/scrollbar-vert-ltr-trough.png"
-      border      = {2, 0, 0, 0}
+      border      = {1, 0, 0, 0}
       orientation = VERTICAL
       direction   = LTR
     }
@@ -1024,7 +1024,7 @@ style "default" {
       function    = BOX
       detail      = "trough"
       file        = "assets/scrollbar-vert-rtl-trough.png"
-      border      = {0, 2, 0, 0}
+      border      = {0, 1, 0, 0}
       orientation = VERTICAL
       direction   = RTL
     }
@@ -1036,7 +1036,7 @@ style "default" {
       state       = NORMAL
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider.png"
-      border      = {16, 16, 18, 16 }
+      border      = {8, 8, 9, 8 }
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1046,7 +1046,7 @@ style "default" {
       state       = PRELIGHT
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider-hover.png"
-      border      = {16, 16, 18, 16 }
+      border      = {8, 8, 9, 8 }
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1056,7 +1056,7 @@ style "default" {
       state       = ACTIVE
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider-active.png"
-      border      = {16, 16, 18, 16 }
+      border      = {8, 8, 9, 8 }
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1066,7 +1066,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "slider"
       file        = "assets/scrollbar-horz-slider-disabled.png"
-      border      = {16, 16, 18, 16 }
+      border      = {8, 8, 9, 8 }
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1078,7 +1078,7 @@ style "default" {
       state       = NORMAL
       detail      = "slider"
       file        = "assets/scrollbar-vert-ltr-slider.png"
-      border      = {18, 16, 16, 16}
+      border      = {9, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = LTR
@@ -1089,7 +1089,7 @@ style "default" {
       state       = PRELIGHT
       detail      = "slider"
       file        = "assets/scrollbar-vert-ltr-slider-hover.png"
-      border      = {18, 16, 16, 16}
+      border      = {9, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = LTR
@@ -1100,7 +1100,7 @@ style "default" {
       state       = ACTIVE
       detail      = "slider"
       file        = "assets/scrollbar-vert-ltr-slider-active.png"
-      border      = {18, 16, 16, 16}
+      border      = {9, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = LTR
@@ -1111,7 +1111,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "slider"
       file        = "assets/scrollbar-vert-ltr-slider-disabled.png"
-      border      = {18, 16, 16, 16}
+      border      = {9, 8, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = LTR
@@ -1124,7 +1124,7 @@ style "default" {
       state       = NORMAL
       detail      = "slider"
       file        = "assets/scrollbar-vert-rtl-slider.png"
-      border      = {16, 18, 16, 16}
+      border      = {8, 9, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = RTL
@@ -1135,7 +1135,7 @@ style "default" {
       state       = PRELIGHT
       detail      = "slider"
       file        = "assets/scrollbar-vert-rtl-slider-hover.png"
-      border      = {16, 18, 16, 16}
+      border      = {8, 9, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = RTL
@@ -1146,7 +1146,7 @@ style "default" {
       state       = ACTIVE
       detail      = "slider"
       file        = "assets/scrollbar-vert-rtl-slider-active.png"
-      border      = {16, 18, 16, 16}
+      border      = {8, 9, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = RTL
@@ -1157,7 +1157,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "slider"
       file        = "assets/scrollbar-vert-rtl-slider-disabled.png"
-      border      = {16, 18, 16, 16}
+      border      = {8, 9, 8, 8}
       stretch     = TRUE
       orientation = VERTICAL
       direction   = RTL
@@ -1174,7 +1174,7 @@ style "default" {
       function    = BOX
       detail      = "trough-upper"
       file        = "assets/scale-horz-trough.png"
-      border      = {12, 12, 0, 0}
+      border      = {6, 6, 0, 0}
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1184,7 +1184,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "trough-upper"
       file        = "assets/scale-horz-trough-disabled.png"
-      border      = {12, 12, 0, 0}
+      border      = {6, 6, 0, 0}
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1193,7 +1193,7 @@ style "default" {
       function    = BOX
       detail      = "trough-lower"
       file        = "assets/scale-horz-trough-active.png"
-      border      = {12, 12, 0, 0}
+      border      = {6, 6, 0, 0}
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1203,7 +1203,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "trough-lower"
       file        = "assets/scale-horz-trough-disabled.png"
-      border      = {12, 12, 0, 0}
+      border      = {6, 6, 0, 0}
       stretch     = TRUE
       orientation = HORIZONTAL
     }
@@ -1212,7 +1212,7 @@ style "default" {
       function    = BOX
       detail      = "trough-upper"
       file        = "assets/scale-vert-trough.png"
-      border      = {0, 0, 12, 12}
+      border      = {0, 0, 6, 6}
       stretch     = TRUE
       orientation = VERTICAL
     }
@@ -1222,7 +1222,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "trough-upper"
       file        = "assets/scale-vert-trough-disabled.png"
-      border      = {0, 0, 12, 12}
+      border      = {0, 0, 6, 6}
       stretch     = TRUE
       orientation = VERTICAL
     }
@@ -1231,7 +1231,7 @@ style "default" {
       function    = BOX
       detail      = "trough-lower"
       file        = "assets/scale-vert-trough-active.png"
-      border      = {0, 0, 12, 12}
+      border      = {0, 0, 6, 6}
       stretch     = TRUE
       orientation = VERTICAL
     }
@@ -1241,7 +1241,7 @@ style "default" {
       state       = INSENSITIVE
       detail      = "trough-lower"
       file        = "assets/scale-vert-trough-disabled.png"
-      border      = {0, 0, 12, 12}
+      border      = {0, 0, 6, 6}
       stretch     = TRUE
       orientation = VERTICAL
     }
@@ -1312,7 +1312,7 @@ style "default" {
     #   function = BOX
     #   detail   = "menubar"
     #   file     = "assets/border.png"
-    #   border   = {0, 0, 0, 2}
+    #   border   = {0, 0, 0, 1}
     # }
 
     #########
@@ -1330,7 +1330,7 @@ style "default" {
       function = BOX
       detail   = "menu_scroll_arrow_up"
       file     = "assets/border.png"
-      border   = {0, 0, 0, 2}
+      border   = {0, 0, 0, 1}
     }
 
     image {
@@ -1344,7 +1344,7 @@ style "default" {
       function = BOX
       detail   = "menu_scroll_arrow_down"
       file     = "assets/border.png"
-      border   = {0, 0, 2, 0}
+      border   = {0, 0, 1, 0}
     }
 
     ###########
@@ -1356,7 +1356,7 @@ style "default" {
       state    = ACTIVE
       detail   = "entry"
       file     = "assets/entry-active.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -1365,7 +1365,7 @@ style "default" {
       state    = INSENSITIVE
       detail   = "entry"
       file     = "assets/entry-disabled.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -1373,7 +1373,7 @@ style "default" {
       function = SHADOW
       detail   = "entry"
       file     = "assets/entry.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -1408,9 +1408,9 @@ style "default" {
       state           = NORMAL
       detail          = "spinbutton_up"
       file            = "assets/spin-ltr-up.png"
-      border          = {0, 16, 16, 0}
+      border          = {0, 8, 8, 0}
       stretch         = TRUE
-      overlay_file    = "assets/pan-up-alt.png"
+      overlay_file    = "assets/pan-up.png"
       overlay_stretch = FALSE
       direction       = LTR
     }
@@ -1420,7 +1420,7 @@ style "default" {
       state           = PRELIGHT
       detail          = "spinbutton_up"
       file            = "assets/spin-ltr-up-hover.png"
-      border          = {0, 16, 16, 0}
+      border          = {0, 8, 8, 0}
       stretch         = TRUE
       overlay_file    = "assets/pan-up.png"
       overlay_stretch = FALSE
@@ -1432,7 +1432,7 @@ style "default" {
       state           = ACTIVE
       detail          = "spinbutton_up"
       file            = "assets/spin-ltr-up-active.png"
-      border          = {0, 16, 16, 0}
+      border          = {0, 8, 8, 0}
       stretch         = TRUE
       overlay_file    = "assets/pan-up.png"
       overlay_stretch = FALSE
@@ -1444,9 +1444,9 @@ style "default" {
       state           = INSENSITIVE
       detail          = "spinbutton_up"
       file            = "assets/spin-ltr-up-disabled.png"
-      border          = {0, 16, 16, 0}
+      border          = {0, 8, 8, 0}
       stretch         = TRUE
-      overlay_file    = "assets/pan-up-alt-disabled.png"
+      overlay_file    = "assets/pan-up-disabled.png"
       overlay_stretch = FALSE
       direction       = LTR
     }
@@ -1458,9 +1458,9 @@ style "default" {
       state           = NORMAL
       detail          = "spinbutton_up"
       file            = "assets/spin-rtl-up.png"
-      border          = {16, 0, 16, 0}
+      border          = {8, 0, 8, 0}
       stretch         = TRUE
-      overlay_file    = "assets/pan-up-alt.png"
+      overlay_file    = "assets/pan-up.png"
       overlay_stretch = FALSE
       direction       = RTL
     }
@@ -1470,7 +1470,7 @@ style "default" {
       state           = PRELIGHT
       detail          = "spinbutton_up"
       file            = "assets/spin-rtl-up-hover.png"
-      border          = {16, 0, 16, 0}
+      border          = {8, 0, 8, 0}
       stretch         = TRUE
       overlay_file    = "assets/pan-up.png"
       overlay_stretch = FALSE
@@ -1482,7 +1482,7 @@ style "default" {
       state           = ACTIVE
       detail          = "spinbutton_up"
       file            = "assets/spin-rtl-up-hover.png"
-      border          = {16, 0, 16, 0}
+      border          = {8, 0, 8, 0}
       stretch         = TRUE
       overlay_file    = "assets/pan-up.png"
       overlay_stretch = FALSE
@@ -1494,9 +1494,9 @@ style "default" {
       state           = INSENSITIVE
       detail          = "spinbutton_up"
       file            = "assets/spin-rtl-up-disabled.png"
-      border          = {16, 0, 16, 0}
+      border          = {8, 0, 8, 0}
       stretch         = TRUE
-      overlay_file    = "assets/pan-up-alt-disabled.png"
+      overlay_file    = "assets/pan-up-disabled.png"
       overlay_stretch = FALSE
       direction       = RTL
     }
@@ -1508,9 +1508,9 @@ style "default" {
       state           = NORMAL
       detail          = "spinbutton_down"
       file            = "assets/spin-ltr-down.png"
-      border          = {0, 16, 0, 16}
+      border          = {0, 8, 0, 8}
       stretch         = TRUE
-      overlay_file    = "assets/pan-down-alt.png"
+      overlay_file    = "assets/pan-down.png"
       overlay_stretch = FALSE
       direction       = LTR
     }
@@ -1520,7 +1520,7 @@ style "default" {
       state           = PRELIGHT
       detail          = "spinbutton_down"
       file            = "assets/spin-ltr-down-hover.png"
-      border          = {0, 16, 0, 16}
+      border          = {0, 8, 0, 8}
       stretch         = TRUE
       overlay_file    = "assets/pan-down.png"
       overlay_stretch = FALSE
@@ -1532,7 +1532,7 @@ style "default" {
       state           = ACTIVE
       detail          = "spinbutton_down"
       file            = "assets/spin-ltr-down-active.png"
-      border          = {0, 16, 0, 16}
+      border          = {0, 8, 0, 8}
       stretch         = TRUE
       overlay_file    = "assets/pan-down.png"
       overlay_stretch = FALSE
@@ -1544,9 +1544,9 @@ style "default" {
       state           = INSENSITIVE
       detail          = "spinbutton_down"
       file            = "assets/spin-ltr-down-disabled.png"
-      border          = {0, 16, 0, 16}
+      border          = {0, 8, 0, 8}
       stretch         = TRUE
-      overlay_file    = "assets/pan-down-alt-disabled.png"
+      overlay_file    = "assets/pan-down-disabled.png"
       overlay_stretch = FALSE
       direction       = LTR
     }
@@ -1558,9 +1558,9 @@ style "default" {
       state           = NORMAL
       detail          = "spinbutton_down"
       file            = "assets/spin-rtl-down.png"
-      border          = {16, 0, 0, 16}
+      border          = {8, 0, 0, 8}
       stretch         = TRUE
-      overlay_file    = "assets/pan-down-alt.png"
+      overlay_file    = "assets/pan-down.png"
       overlay_stretch = FALSE
       direction       = RTL
     }
@@ -1570,7 +1570,7 @@ style "default" {
       state           = PRELIGHT
       detail          = "spinbutton_down"
       file            = "assets/spin-rtl-down-hover.png"
-      border          = {16, 0, 0, 16}
+      border          = {8, 0, 0, 8}
       stretch         = TRUE
       overlay_file    = "assets/pan-down.png"
       overlay_stretch = FALSE
@@ -1582,7 +1582,7 @@ style "default" {
       state           = ACTIVE
       detail          = "spinbutton_down"
       file            = "assets/spin-rtl-down-active.png"
-      border          = {16, 0, 0, 16}
+      border          = {8, 0, 0, 8}
       stretch         = TRUE
       overlay_file    = "assets/pan-down.png"
       overlay_stretch = FALSE
@@ -1594,9 +1594,9 @@ style "default" {
       state           = INSENSITIVE
       detail          = "spinbutton_down"
       file            = "assets/spin-rtl-down-disabled.png"
-      border          = {16, 0, 0, 16}
+      border          = {8, 0, 0, 8}
       stretch         = TRUE
-      overlay_file    = "assets/pan-down-alt-disabled.png"
+      overlay_file    = "assets/pan-down-disabled.png"
       overlay_stretch = FALSE
       direction       = RTL
     }
@@ -1662,8 +1662,8 @@ style "menubar" {
 }
 
 style "menubar_item" {
-  xthickness = 6
-  ythickness = 8
+  xthickness = 3
+  ythickness = 4
 
   fg[NORMAL]      = mix(0.7, @titlebar_fg_color, @titlebar_bg_color)
   bg[PRELIGHT]    = mix(0.12, @titlebar_fg_color, @titlebar_bg_color)
@@ -1682,8 +1682,8 @@ style "menu" {
 }
 
 style "menu_item" {
-  xthickness = 8
-  ythickness = 8
+  xthickness = 4
+  ythickness = 4
 
   bg[PRELIGHT]   = mix(0.08, @fg_color, @menu_color)
   fg[PRELIGHT]   = @fg_color
@@ -1902,13 +1902,13 @@ style "menu_item" {
 
 style "separator_menu_item" {
   xthickness = 0
-  ythickness = 4
+  ythickness = 2
 
   engine "pixmap" {
     image {
       function = BOX
       file     = "assets/border.png"
-      border   = {0, 0, 0, 2}
+      border   = {0, 0, 0, 1}
     }
   }
 }
@@ -1928,8 +1928,8 @@ style "normal_button_label" {
 }
 
 style "button" {
-  xthickness = 8
-  ythickness = 8
+  xthickness = 4
+  ythickness = 4
 
   # For the sake of sanity style buttons this way
   engine "pixmap" {
@@ -1942,7 +1942,7 @@ style "button" {
       function = BOX
       state    = NORMAL
       file     = "assets/button.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -1951,7 +1951,7 @@ style "button" {
       state    = PRELIGHT
       shadow   = OUT
       file     = "assets/button-hover.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -1961,7 +1961,7 @@ style "button" {
       state    = PRELIGHT
       shadow   = IN
       file     = "assets/button-active.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -1969,7 +1969,7 @@ style "button" {
       function = BOX
       state    = ACTIVE
       file     = "assets/button-active.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -1977,7 +1977,7 @@ style "button" {
       function = BOX
       state    = INSENSITIVE
       file     = "assets/button-disabled.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
   }
@@ -2000,13 +2000,13 @@ style "entry" {
 
   # We set this same as the border of the border of the entry
   # This way there's no overlap
-  xthickness = 12
-  ythickness = 12
+  xthickness = 6
+  ythickness = 6
 }
 
 style "combobox" {
-  xthickness = 12
-  ythickness = 12
+  xthickness = 6
+  ythickness = 6
 
   # This affects only the button beside an entry
   GtkButton::inner-border = {0, 0, 0, 0}
@@ -2022,7 +2022,7 @@ style "combobox" {
       function = BOX
       state    = NORMAL
       file     = "assets/entry.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -2030,7 +2030,7 @@ style "combobox" {
       function = BOX
       state    = PRELIGHT
       file     = "assets/entry-hover.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -2038,7 +2038,7 @@ style "combobox" {
       function = BOX
       state    = ACTIVE
       file     = "assets/entry-active.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -2046,7 +2046,7 @@ style "combobox" {
       function = BOX
       state    = INSENSITIVE
       file     = "assets/entry-disabled.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
   }
@@ -2059,7 +2059,7 @@ style "combobox_cellview" {
 
 style "combobox_entry" {
   # Since one side of the button is missing, we need to shift the arrow a little to the right
-  GtkButton::inner-border = {0, 4, 0, 0}
+  GtkButton::inner-border = {0, 2, 0, 0}
 
   engine "pixmap" {
 
@@ -2072,7 +2072,7 @@ style "combobox_entry" {
       state     = NORMAL
       detail    = "entry"
       file      = "assets/combo-left-entry.png"
-      border    = {16, 16, 16, 16}
+      border    = {8, 8, 8, 8}
       stretch   = TRUE
       direction = LTR
     }
@@ -2082,7 +2082,7 @@ style "combobox_entry" {
       state     = ACTIVE
       detail    = "entry"
       file      = "assets/combo-left-entry-active.png"
-      border    = {16, 16, 16, 16}
+      border    = {8, 8, 8, 8}
       stretch   = TRUE
       direction = LTR
     }
@@ -2092,7 +2092,7 @@ style "combobox_entry" {
       state     = INSENSITIVE
       detail    = "entry"
       file      = "assets/combo-left-entry-disabled.png"
-      border    = {16, 16, 16, 16}
+      border    = {8, 8, 8, 8}
       stretch   = TRUE
       direction = LTR
     }
@@ -2106,7 +2106,7 @@ style "combobox_entry" {
       state     = NORMAL
       detail    = "entry"
       file      = "assets/combo-right-entry.png"
-      border    = {16, 16, 16, 16}
+      border    = {8, 8, 8, 8}
       stretch   = TRUE
       direction = RTL
     }
@@ -2116,7 +2116,7 @@ style "combobox_entry" {
       state     = ACTIVE
       detail    = "entry"
       file      = "assets/combo-right-entry-active.png"
-      border    = {16, 16, 16, 16}
+      border    = {8, 8, 8, 8}
       stretch   = TRUE
       direction = RTL
     }
@@ -2126,7 +2126,7 @@ style "combobox_entry" {
       state     = INSENSITIVE
       detail    = "entry"
       file      = "assets/combo-right-entry-disabled.png"
-      border    = {16, 16, 16, 16}
+      border    = {8, 8, 8, 8}
       stretch   = TRUE
       direction = RTL
     }
@@ -2140,7 +2140,7 @@ style "combobox_entry" {
       state     = NORMAL
       detail    = "button"
       file      = "assets/combo-right-entry.png"
-      border    = {0, 16, 16, 16}
+      border    = {0, 8, 8, 8}
       stretch   = TRUE
       direction = LTR
     }
@@ -2150,7 +2150,7 @@ style "combobox_entry" {
       state     = PRELIGHT
       detail    = "button"
       file      = "assets/combo-right-entry-hover.png"
-      border    = {0, 16, 16, 16}
+      border    = {0, 8, 8, 8}
       stretch   = TRUE
       direction = LTR
     }
@@ -2160,7 +2160,7 @@ style "combobox_entry" {
       state     = ACTIVE
       detail    = "button"
       file      = "assets/combo-right-entry-active.png"
-      border    = {0, 16, 16, 16}
+      border    = {0, 8, 8, 8}
       stretch   = TRUE
       direction = LTR
     }
@@ -2170,7 +2170,7 @@ style "combobox_entry" {
       state     = INSENSITIVE
       detail    = "button"
       file      = "assets/combo-right-entry-disabled.png"
-      border    = {0, 16, 16, 16}
+      border    = {0, 8, 8, 8}
       stretch   = TRUE
       direction = LTR
     }
@@ -2184,7 +2184,7 @@ style "combobox_entry" {
       state     = NORMAL
       detail    = "button"
       file      = "assets/combo-left-entry.png"
-      border    = {16, 0, 16, 16}
+      border    = {8, 0, 8, 8}
       stretch   = TRUE
       direction = RTL
     }
@@ -2194,7 +2194,7 @@ style "combobox_entry" {
       state     = PRELIGHT
       detail    = "button"
       file      = "assets/combo-left-entry-hover.png"
-      border    = {16, 0, 16, 16}
+      border    = {8, 0, 8, 8}
       stretch   = TRUE
       direction = RTL
     }
@@ -2204,7 +2204,7 @@ style "combobox_entry" {
       state     = ACTIVE
       detail    = "button"
       file      = "assets/combo-left-entry-active.png"
-      border    = {16, 0, 16, 16}
+      border    = {8, 0, 8, 8}
       stretch   = TRUE
       direction = RTL
     }
@@ -2214,7 +2214,7 @@ style "combobox_entry" {
       state     = INSENSITIVE
       detail    = "button"
       file      = "assets/combo-left-entry-disabled.png"
-      border    = {16, 0, 16, 16}
+      border    = {8, 0, 8, 8}
       stretch   = TRUE
       direction = RTL
     }
@@ -2226,12 +2226,12 @@ style "combo_button_padding" {
   # little to the right.
   # This is the same thing we've done above but the combo, unlike the combobox,
   # uses padding the same way as a button.
-  GtkButton::inner-border = {6, 12, 6, 6}
+  GtkButton::inner-border = {3, 6, 3, 3}
 }
 
 style "notebook" {
-  xthickness = 6
-  ythickness = 6
+  xthickness = 3
+  ythickness = 3
 }
 
 style "notebook_tab_label" {
@@ -2280,7 +2280,7 @@ style "scale_horz" {
       function    = BOX
       detail      = "trough-upper"
       file        = "assets/scale-horz-trough.png"
-      border      = {12, 12, 0, 0}
+      border      = {6, 6, 0, 0}
       stretch     = TRUE
     }
 
@@ -2288,7 +2288,7 @@ style "scale_horz" {
       function    = BOX
       detail      = "trough-lower"
       file        = "assets/scale-horz-trough-active.png"
-      border      = {12, 12, 0, 0}
+      border      = {6, 6, 0, 0}
       stretch     = TRUE
     }
   }
@@ -2300,7 +2300,7 @@ style "scale_vert" {
       function    = BOX
       detail      = "trough-upper"
       file        = "assets/scale-vert-trough.png"
-      border      = {0, 0, 12, 12}
+      border      = {0, 0, 6, 6}
       stretch     = TRUE
     }
 
@@ -2308,7 +2308,7 @@ style "scale_vert" {
       function    = BOX
       detail      = "trough-lower"
       file        = "assets/scale-vert-trough-active.png"
-      border      = {0, 0, 12, 12}
+      border      = {0, 0, 6, 6}
       stretch     = TRUE
     }
   }
@@ -2342,22 +2342,23 @@ style "progressbar" {
 }
 
 style "treeview_header" {
-  xthickness = 4
-  ythickness = 4
+  xthickness = 2
+  ythickness = 2
 
   fg[NORMAL]   = mix(0.7, @fg_color, @base_color)
-  fg[PRELIGHT] = @fg_color
+  fg[PRELIGHT] = mix(0.7, @fg_color, @base_color)
+  fg[ACTIVE]   = mix(0.7, @fg_color, @base_color)
 
   font_name = "Medium"
 
-  GtkButton::inner-border = {8, 8, 0, 4}
+  GtkButton::inner-border = {4, 4, 0, 2}
 
   engine "pixmap" {
     image {
       function  = BOX
       state     = NORMAL
       file      = "assets/treeview-ltr-button.png"
-      border    = {0, 2, 0, 2}
+      border    = {0, 1, 0, 1}
       stretch   = TRUE
       direction = LTR
     }
@@ -2366,7 +2367,7 @@ style "treeview_header" {
       function  = BOX
       state     = PRELIGHT
       file      = "assets/treeview-ltr-button-hover.png"
-      border    = {0, 2, 0, 2}
+      border    = {0, 1, 0, 1}
       stretch   = TRUE
       direction = LTR
     }
@@ -2375,7 +2376,7 @@ style "treeview_header" {
       function  = BOX
       state     = ACTIVE
       file      = "assets/treeview-ltr-button-active.png"
-      border    = {0, 2, 0, 2}
+      border    = {0, 1, 0, 1}
       stretch   = TRUE
       direction = LTR
     }
@@ -2384,7 +2385,7 @@ style "treeview_header" {
       function  = BOX
       state     = NORMAL
       file      = "assets/treeview-rtl-button.png"
-      border    = {2, 0, 0, 2}
+      border    = {1, 0, 0, 1}
       stretch   = TRUE
       direction = RTL
     }
@@ -2393,7 +2394,7 @@ style "treeview_header" {
       function  = BOX
       state     = PRELIGHT
       file      = "assets/treeview-rtl-button-hover.png"
-      border    = {2, 0, 0, 2}
+      border    = {1, 0, 0, 1}
       stretch   = TRUE
       direction = RTL
     }
@@ -2402,7 +2403,7 @@ style "treeview_header" {
       function  = BOX
       state     = ACTIVE
       file      = "assets/treeview-rtl-button-active.png"
-      border    = {2, 0, 0, 2}
+      border    = {1, 0, 0, 1}
       stretch   = TRUE
       direction = RTL
     }
@@ -2410,7 +2411,7 @@ style "treeview_header" {
     image {
       function        = ARROW
       state           = NORMAL
-      overlay_file    = "assets/pan-up-alt.png"
+      overlay_file    = "assets/pan-up.png"
       overlay_stretch = FALSE
       arrow_direction = UP
     }
@@ -2434,7 +2435,7 @@ style "treeview_header" {
     image {
       function        = ARROW
       state           = NORMAL
-      overlay_file    = "assets/pan-down-alt.png"
+      overlay_file    = "assets/pan-down.png"
       overlay_stretch = FALSE
       arrow_direction = DOWN
     }
@@ -2462,7 +2463,7 @@ style "scrolled_window" {
     image {
       function = SHADOW
       file     = "assets/frame.png"
-      border   = {2, 2, 2, 2}
+      border   = {1, 1, 1, 1}
       stretch  = TRUE
     }
   }
@@ -2478,14 +2479,14 @@ style "frame" {
     image {
       function = SHADOW
       file     = "assets/frame.png"
-      border   = {2, 2, 2, 2}
+      border   = {1, 1, 1, 1}
       stretch  = TRUE
     }
 
     image {
       function       = SHADOW_GAP
       file           = "assets/frame.png"
-      border         = {2, 2, 2, 2}
+      border         = {1, 1, 1, 1}
       stretch        = TRUE
       gap_start_file = "assets/border.png"
       gap_end_file   = "assets/border.png"
@@ -2494,7 +2495,7 @@ style "frame" {
 }
 
 style "tool_button" {
-  GtkButton::inner-border = {4, 4, 4, 4}
+  GtkButton::inner-border = {2, 2, 2, 2}
 
   # For the sake of sanity style buttons this way
   engine "pixmap" {
@@ -2502,7 +2503,7 @@ style "tool_button" {
       function = BOX
       state    = NORMAL
       file     = "assets/flat-button.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -2511,7 +2512,7 @@ style "tool_button" {
       state    = PRELIGHT
       shadow   = OUT
       file     = "assets/flat-button-hover.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -2521,7 +2522,7 @@ style "tool_button" {
       state    = PRELIGHT
       shadow   = IN
       file     = "assets/flat-button-active.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -2529,7 +2530,7 @@ style "tool_button" {
       function = BOX
       state    = ACTIVE
       file     = "assets/flat-button-active.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -2538,7 +2539,7 @@ style "tool_button" {
       state    = INSENSITIVE
       shadow   = OUT
       file     = "assets/flat-button-disabled.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
 
@@ -2547,7 +2548,7 @@ style "tool_button" {
       state    = INSENSITIVE
       shadow   = IN
       file     = "assets/button-disabled.png"
-      border   = {16, 16, 16, 16}
+      border   = {8, 8, 8, 8}
       stretch  = TRUE
     }
   }
@@ -2555,8 +2556,8 @@ style "tool_button" {
 
 style "toolbar_separator" {
   GtkWidget::wide-separators  = 1
-  GtkWidget::separator-width  = 2
-  GtkWidget::separator-height = 2
+  GtkWidget::separator-width  = 1
+  GtkWidget::separator-height = 1
 
   engine "pixmap" {
     image {
@@ -2573,15 +2574,15 @@ style "inline_toolbar" {
     image {
       function = BOX
       file     = "assets/frame-inline.png"
-      border   = {2, 2, 0, 2}
+      border   = {1, 1, 0, 1}
       stretch  = TRUE
     }
   }
 }
 
 style "tooltip" {
-  xthickness = 16
-  ythickness = 16
+  xthickness = 8
+  ythickness = 8
 
   bg[NORMAL]   = @tooltip_bg_color
   fg[NORMAL]   = @tooltip_fg_color
