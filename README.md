@@ -1,6 +1,6 @@
 ![](./demo.png)
 
-This theme is a port of [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material), currently support GTK, Gnome, Cinnamon, XFCE, Unity, Plank and Icons.
+This theme is a port of [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material), currently supports GTK, Gnome, Cinnamon, XFCE, Unity, Plank and Icons.
 
 ## Installation
 
