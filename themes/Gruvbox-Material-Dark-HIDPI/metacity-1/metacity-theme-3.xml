@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>oomox-Gruvbox-Material-Dark-hidpi</name>
+  <name>Gruvbox-Material-Dark-HIDPI</name>
   <author>nana-4</author>
   <copyright>GPL</copyright>
   <date>2020</date>
-  <description>oomox-Gruvbox-Material-Dark-hidpi Metacity theme</description>
+  <description>Gruvbox-Material-Dark-HIDPI Metacity theme</description>
 </info>
 
 <!-- meaningful constants -->
@@ -496,10 +496,10 @@
   <piece position="titlebar" draw_ops="entire_background_unfocused"/>
 </frame_style>
 
-<frame_style name="dialog_focused" geometry="nobuttons" parent="normal_focused">
+<frame_style name="dialog_focused" geometry="normal" parent="normal_focused">
 </frame_style>
 
-<frame_style name="dialog_unfocused" geometry="nobuttons" parent="normal_unfocused">
+<frame_style name="dialog_unfocused" geometry="normal" parent="normal_unfocused">
 </frame_style>
 
 <frame_style name="modal_dialog_focused" geometry="modal" parent="normal_focused">

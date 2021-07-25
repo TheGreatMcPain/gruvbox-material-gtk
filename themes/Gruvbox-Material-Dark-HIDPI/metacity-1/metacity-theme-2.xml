@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>oomox-Gruvbox-Material-Dark-hidpi</name>
+  <name>Gruvbox-Material-Dark-HIDPI</name>
   <author>nana-4</author>
   <copyright>GPL</copyright>
   <date>2020</date>
-  <description>oomox-Gruvbox-Material-Dark-hidpi Metacity theme</description>
+  <description>Gruvbox-Material-Dark-HIDPI Metacity theme</description>
 </info>
 
 <!-- meaningful constants -->
 
 <constant name="C_titlebar_focused" value="#32302f"/>
 <constant name="C_titlebar_unfocused" value="#282828"/>
-<constant name="C_highlight_focused" value="blend/#32302f/#d4be98/0.1"/>
-<constant name="C_highlight_unfocused" value="blend/#282828/#d4be98/0.1"/>
+<constant name="C_highlight_focused" value="blend/#32302f/#d4be98/0.05"/>
+<constant name="C_highlight_unfocused" value="blend/#282828/#d4be98/0.05"/>
 <constant name="C_title_focused" value="blend/#32302f/#d4be98/0.87"/>
 <constant name="C_title_unfocused" value="blend/#282828/#d4be98/0.6"/>
 
@@ -480,10 +480,10 @@
   <piece position="titlebar" draw_ops="entire_background_unfocused"/>
 </frame_style>
 
-<frame_style name="dialog_focused" geometry="nobuttons" parent="normal_focused">
+<frame_style name="dialog_focused" geometry="normal" parent="normal_focused">
 </frame_style>
 
-<frame_style name="dialog_unfocused" geometry="nobuttons" parent="normal_unfocused">
+<frame_style name="dialog_unfocused" geometry="normal" parent="normal_unfocused">
 </frame_style>
 
 <frame_style name="modal_dialog_focused" geometry="modal" parent="normal_focused">
