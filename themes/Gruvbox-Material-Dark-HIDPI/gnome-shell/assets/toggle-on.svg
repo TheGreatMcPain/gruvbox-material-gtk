@@ -8,6 +8,6 @@
       <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
     </filter>
   </defs>
-  <rect x="2" y="5" width="36" height="14" ry="7" fill="#8ab4f8" fill-opacity=".5"/>
-  <circle cx="28" cy="12" r="10" fill="#8ab4f8" filter="url(#shadow-z1)"/>
+  <rect x="2" y="5" width="36" height="14" ry="7" fill="#8AB4F8" fill-opacity=".5"/>
+  <circle cx="28" cy="12" r="10" fill="#8AB4F8" filter="url(#shadow-z1)"/>
 </svg>
