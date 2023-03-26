@@ -1261,7 +1261,7 @@ windowcontrols:not(:only-child):not(.empty).start:dir(rtl), windowcontrols:not(:
   color: rgba(221, 199, 161, 0.5);
 }
 .titlebar:backdrop {
-  background-color: #22201f;
+  background-color: #282625;
   color: rgba(221, 199, 161, 0.7);
 }
 .titlebar:backdrop:disabled {
@@ -1669,7 +1669,7 @@ menubar {
   color: #ddc7a1;
 }
 menubar:backdrop {
-  background-color: #22201f;
+  background-color: #282625;
   color: rgba(221, 199, 161, 0.7);
 }
 .csd menubar {
@@ -3291,7 +3291,7 @@ window.solid-csd {
   background-color: #32302f;
 }
 window.solid-csd:backdrop {
-  background-color: #22201f;
+  background-color: #282625;
 }
 window.maximized, window.fullscreen, window.tiled, window.tiled-top, window.tiled-left, window.tiled-right, window.tiled-bottom {
   border-radius: 0;
@@ -3528,9 +3528,9 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_unfocused_title rgba(221, 199, 161, 0.7);
 @define-color wm_highlight rgba(255, 255, 255, 0.05);
 @define-color wm_bg #32302f;
-@define-color wm_unfocused_bg #22201f;
+@define-color wm_unfocused_bg #282625;
 @define-color xfwm4_title #ddc7a1;
-@define-color xfwm4_unfocused_title #a5957a;
+@define-color xfwm4_unfocused_title #a7977c;
 /* content view background such as thumbnails view in Photos or Boxes */
 @define-color content_view_bg #282828;
 /* Very contrasty background for text views (@theme_text_color foreground) */
