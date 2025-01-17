@@ -1,3 +1,11 @@
+### As of 01-16-2025 this is no longer maintained
+
+For a while I really haven't had much interest maintaining since I personally don't use a lot of graphical applications. Plus, I primarily use window managers, so fixing Gnome or KDE related issues isn't something I'd know how to do.
+
+All I really did was just use `oomox` to update the theme, and hope it fixes an issue.
+
+This theme should continue to work (Unsure about GTK-4, but QT6 applications work fine with [qt6gtk2](https://github.com/trialuser02/qt6gtk2)) for the time being.
+
 ![](./demo.png)
 
 This theme is a port of [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material), currently supports GTK, Gnome, Cinnamon, XFCE, Unity, Plank and Icons.
@@ -8,10 +16,10 @@ This theme is a port of [sainnhe/gruvbox-material](https://github.com/sainnhe/gr
 
 - GTK >= 3.18
 - Murrine engine — The package name depends on the distro.
-    - `gtk-engine-murrine` on Arch Linux
-    - `gtk-murrine-engine` on Fedora
-    - `gtk2-engine-murrine` on openSUSE
-    - `gtk2-engines-murrine` on Debian, Ubuntu, etc.
+  - `gtk-engine-murrine` on Arch Linux
+  - `gtk-murrine-engine` on Fedora
+  - `gtk2-engine-murrine` on openSUSE
+  - `gtk2-engines-murrine` on Debian, Ubuntu, etc.
 
 ### AUR
 
